@@ -1,0 +1,15 @@
+node_modules/
+.expo/
+.env
+.env.*
+!.env.example
+dist/
+build/
+
+# Android local and generated files
+android/app/debug.keystore
+android/hs_err_pid*.log
+android/replay_pid*.log
+
+# Local test files
+test.txt
