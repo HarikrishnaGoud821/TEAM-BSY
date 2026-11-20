@@ -1,0 +1,6 @@
+- [x] Add authenticated TEAM BSY group chat with admin-managed groups and member controls.
+- [x] Add messages, replies, reactions, file attachments, search, and read timestamps.
+- [ ] Add unread-message notifications and indicators.
+- [x] Add secure Cloud tables, policies, and private file storage for group conversations.
+- [x] Verify signed-in access, group-creation dialog, mobile layout, route, and build status.
+- [ ] Add voice/video calls, statuses, and end-to-end encryption.

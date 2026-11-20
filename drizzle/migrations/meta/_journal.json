@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793937480989,
+      "tag": "0000_add_group_chat",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793937641944,
+      "tag": "0001_secure_chat_membership_check",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794211495068,
+      "tag": "0002_allow_admin_group_access",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794484429243,
+      "tag": "0003_add_encrypted_chat_calls",
+      "breakpoints": true
+    }
+  ]
+}

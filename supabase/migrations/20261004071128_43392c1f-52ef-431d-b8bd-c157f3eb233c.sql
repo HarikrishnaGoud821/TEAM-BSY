@@ -1,0 +1,10 @@
+REVOKE EXECUTE ON FUNCTION public.handle_new_user() FROM PUBLIC, anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.contribution_before() FROM PUBLIC, anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.recalc_expense_total() FROM PUBLIC, anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.audit_row() FROM PUBLIC, anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.next_receipt_number(int) FROM PUBLIC, anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.has_role(uuid, public.app_role) FROM PUBLIC, anon;
+REVOKE EXECUTE ON FUNCTION public.has_any_role(uuid, public.app_role[]) FROM PUBLIC, anon;
+GRANT EXECUTE ON FUNCTION public.has_role(uuid, public.app_role) TO authenticated;
+GRANT EXECUTE ON FUNCTION public.has_any_role(uuid, public.app_role[]) TO authenticated;
+CREATE POLICY "no direct access" ON public.receipt_counters FOR SELECT TO authenticated USING (false);
